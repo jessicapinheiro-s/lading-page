@@ -1,0 +1,154 @@
+header {
+    background-color: #043873;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    height: 92px;
+
+    nav {
+        width: 33%;
+
+        ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+    }
+
+    .bt-free-triat {
+        background-color: #4F9CF9;
+    }
+
+    .bt-login {
+        background-color: #FFE492;
+    }
+}
+
+.container-content {
+    background-color: #043873;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    height: 550px;
+    padding: 0px 200px;
+
+    div {
+        width: 40%;
+    }
+
+    button {
+        background-color: #4F9CF9;
+    }
+}
+.container-custom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 550px;
+    padding: 0px 200px;
+
+    div {
+        width: 40%;
+    }
+
+    button {
+        background-color: #4F9CF9;
+    }
+}
+.container-asextension{
+    background-color: #043873;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    height: 550px;
+    padding: 0px 200px;
+
+    div {
+        width: 40%;
+    }
+
+    button {
+        background-color: #4F9CF9;
+    }
+}
+
+.container-content-work {
+    display: grid;
+    justify-items: center;
+    /* Isso alinha os itens horizontalmente */
+    align-items: center;
+    /* Isso alinha os itens verticalmente */
+    margin: 100px 200px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 'container1 img1'
+        'img2 container2';
+
+    .content-1 {
+        grid-area: container1;
+        align-items: center;
+    }
+
+    .content-2 {
+        grid-area: container2;
+    }
+
+    .container-img-1 {
+        grid-area: img1;
+    }
+
+    .container-img-2 {
+        grid-area: img2;
+    }
+
+
+    button {
+        background-color: #4F9CF9;
+
+    }
+}
+
+button {
+    border: none;
+    padding: 20px;
+    border-radius: 9px;
+    width: 219px;
+
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+}A
+.container-price-table{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 80px 50px 1fr;
+    grid-template-areas: 
+    'Title Title Title'
+    'Description Description Description'
+    'column1 column2 column3';
+    .container-price-table{
+        grid-area:Title ;
+    }
+    .container-description{
+        grid-area:Description ;
+    }
+    .column1{
+        grid-area:column1;
+    }
+    .column2{
+        grid-area:column2;
+    }
+    .column3{
+        grid-area:column3 ;
+    }
+    justify-items: center;
+    /* Isso alinha os itens horizontalmente */
+    align-items: center;
+    margin: 100px 200px;
+    border: 1px solid red;
+}

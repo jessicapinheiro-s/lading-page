@@ -1,0 +1,135 @@
+header {
+  background-color: #043873;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  height: 92px;
+}
+header nav {
+  width: 33%;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header .bt-free-triat {
+  background-color: #4F9CF9;
+}
+header .bt-login {
+  background-color: #FFE492;
+}
+
+.container-content {
+  background-color: #043873;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  height: 550px;
+  padding: 0px 200px;
+}
+.container-content div {
+  width: 40%;
+}
+.container-content button {
+  background-color: #4F9CF9;
+}
+
+.container-custom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 550px;
+  padding: 0px 200px;
+}
+.container-custom div {
+  width: 40%;
+}
+.container-custom button {
+  background-color: #4F9CF9;
+}
+
+.container-asextension {
+  background-color: #043873;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  height: 550px;
+  padding: 0px 200px;
+}
+.container-asextension div {
+  width: 40%;
+}
+.container-asextension button {
+  background-color: #4F9CF9;
+}
+
+.container-content-work {
+  display: grid;
+  justify-items: center;
+  /* Isso alinha os itens horizontalmente */
+  align-items: center;
+  /* Isso alinha os itens verticalmente */
+  margin: 100px 200px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "container1 img1" "img2 container2";
+}
+.container-content-work .content-1 {
+  grid-area: container1;
+  align-items: center;
+}
+.container-content-work .content-2 {
+  grid-area: container2;
+}
+.container-content-work .container-img-1 {
+  grid-area: img1;
+}
+.container-content-work .container-img-2 {
+  grid-area: img2;
+}
+.container-content-work button {
+  background-color: #4F9CF9;
+}
+
+button {
+  border: none;
+  padding: 20px;
+  border-radius: 9px;
+  width: 219px;
+}
+button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+A .container-price-table {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 80px 50px 1fr;
+  grid-template-areas: "Title Title Title" "Description Description Description" "column1 column2 column3";
+  justify-items: center;
+  /* Isso alinha os itens horizontalmente */
+  align-items: center;
+  margin: 100px 200px;
+  border: 1px solid red;
+}
+A .container-price-table .container-price-table {
+  grid-area: Title;
+}
+A .container-price-table .container-description {
+  grid-area: Description;
+}
+A .container-price-table .column1 {
+  grid-area: column1;
+}
+A .container-price-table .column2 {
+  grid-area: column2;
+}
+A .container-price-table .column3 {
+  grid-area: column3;
+}/*# sourceMappingURL=App.css.map */
