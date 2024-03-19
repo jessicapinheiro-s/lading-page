@@ -201,10 +201,16 @@ header .bt-login a {
   background-color: #043873;
   color: #fff;
   text-align: center;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  /*display: grid;
+  grid-template-columns: 1fr 1fr ;
   grid-template-rows: 80px 80px 100px 100px 80px 1fr;
-  grid-template-areas: "Title Title " "Description Description " "button button" "Title2 img" "Description2 img" "button2 img";
+  grid-template-areas:
+      'Title Title '
+      'Description Description '
+      'button button'
+      'Title2 img'
+      'Description2 img'
+      'button2 img';*/
 }
 .container-msg-banner button {
   color: #fff;
