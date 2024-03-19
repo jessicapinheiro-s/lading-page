@@ -1,5 +1,5 @@
-import MinhaImagem from '../imgs/2002.i515.001_modern_students_flat_icons-13-removebg-preview.png';
 
+import { IoArrowForwardOutline } from "react-icons/io5";
 
 const WorkManagmente = () => {
     return (
@@ -10,15 +10,15 @@ const WorkManagmente = () => {
                 <button><a href="#">Get Started</a></button>
             </div>
             <div className="container-img-1">
-                <img src={MinhaImagem} alt="img" />
+                <img src='' alt="img" />
             </div>
             <div className="container-img-2">
-                <img src={MinhaImagem} alt="img" />
+                <img src='' alt="img" />
             </div>
             <div className="content-2">
                 <h1>Work together</h1>
                 <p>With whitepace, share your notes with your colleagues and collaborate on them. You can also publish a note to the internet and share the URL with others.</p>
-                <button><a href="#">Try it now</a></button>
+                <button><a href="#">Try it now <IoArrowForwardOutline/></a></button>
             </div>
 
         </div>

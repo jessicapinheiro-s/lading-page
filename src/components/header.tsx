@@ -1,3 +1,5 @@
+import { MdKeyboardArrowDown } from "react-icons/md";
+
 
 const HeaderContainer = () => {
     return(
@@ -5,9 +7,9 @@ const HeaderContainer = () => {
             <img src="log" alt="logo" />
             <nav>
                 <ul>
-                    <li>Home</li>
-                    <li>Contact Us</li>
-                    <li>About</li>
+                    <li>Home <MdKeyboardArrowDown/></li>
+                    <li>Contact Us <MdKeyboardArrowDown/></li>
+                    <li>About <MdKeyboardArrowDown/></li>
                 </ul>
             </nav>
             <button className="bt-login"><a href="#">Login</a></button>

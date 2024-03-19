@@ -1,5 +1,6 @@
 import { CiCircleCheck } from "react-icons/ci";
 import "../style/App.css";
+
 const Plans = () => {
     return (
         <div className="container-price-table">
