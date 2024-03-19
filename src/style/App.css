@@ -46,6 +46,8 @@ header nav ul li {
 }
 header .bt-free-triat {
   background-color: #4F9CF9;
+  width: 100px;
+  padding:  10px 20px;
 }
 header .bt-free-triat a {
   text-decoration: none;
@@ -53,7 +55,8 @@ header .bt-free-triat a {
 }
 header .bt-login {
   background-color: #FFE492;
-  width: 126px;
+  width: 80px;
+  padding:  10px 20px;
 }
 header .bt-login a {
   text-decoration: none;
