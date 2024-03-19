@@ -240,6 +240,10 @@ header .bt-login a {
  .container-content, .container-custom, .container-msg-banner, .container-price-table, .container-content-work, .container-asextension, .container-sponsor {
   padding: 50px 20px;
 }
+  header {
+  height: 80px;
+  padding: 0px 20px;
+}
 .container-price-table {
   display: grid;
   justify-items: center;
