@@ -266,4 +266,8 @@ header .bt-login a {
   header nav ul {
   display: block;
   }
+
+  button {
+  width: 100px;
+}
 }
