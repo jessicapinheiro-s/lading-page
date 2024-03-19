@@ -8,6 +8,7 @@ button {
   border-radius: 8px;
   width: 180px;
   outline: none;
+  word-wrap: wrap;
 }
 button a {
   text-decoration: none;
