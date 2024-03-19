@@ -48,7 +48,7 @@ header nav ul li {
 }
 header .bt-free-triat {
   background-color: #4F9CF9;
-  width: 60px;
+  width: 80px;
   padding:  10px;
 }
 header .bt-free-triat a {
@@ -257,4 +257,7 @@ header .bt-login a {
   grid-template-areas: "Title" "Description" "column1" "column2" "column3" ;
   grid-gap: 20px;
 }
+  header nav ul {
+  display: block;
+  }
 }
