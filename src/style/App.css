@@ -155,6 +155,7 @@ header .bt-login a {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 80px 80px 1fr;
   grid-template-areas: "Title Title Title" "Description Description Description" "column1 column2 column3";
+  grid-gap: 20px;
 }
 .container-price-table .container-title {
   grid-area: Title;
@@ -239,4 +240,5 @@ header .bt-login a {
  .container-content, .container-custom, .container-msg-banner, .container-price-table, .container-content-work, .container-asextension, .container-sponsor {
   padding: 50px 20px;
 }
+
 }
