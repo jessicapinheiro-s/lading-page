@@ -11,6 +11,11 @@ button {
         align-items: center;
         justify-content: center;
     }
+    &:hover{
+        transform: scale(1.1);
+        transition:  ease 0.5s;
+        border: 1px solid #fff;
+    }
 }
 
 header {
@@ -167,7 +172,7 @@ header {
     display: grid;
     justify-items: center;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 80px 50px 1fr;
+    grid-template-rows: 80px 80px 1fr;
     grid-template-areas:
         'Title Title Title'
         'Description Description Description'
@@ -184,7 +189,10 @@ header {
     }
     .column1, .column2,.column3{
         border-radius: 8px;
-        padding: 20px 30px;
+        padding: 20px 40px;
+        p{
+            padding: 10px;
+        }
     }
     .column1 {
         grid-area: column1;
@@ -205,6 +213,10 @@ header {
 
         button {
             background-color: #4F9CF9;
+            a{
+                color: #fff;
+                text-decoration: none;
+            }
         }
     }
 

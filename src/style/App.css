@@ -11,6 +11,11 @@ button a {
   align-items: center;
   justify-content: center;
 }
+button:hover {
+  transform: scale(1.1);
+  transition: ease 0.5s;
+  border: 1px solid #fff;
+}
 
 header {
   background-color: #043873;
@@ -141,7 +146,7 @@ header .bt-login a {
   display: grid;
   justify-items: center;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 80px 50px 1fr;
+  grid-template-rows: 80px 80px 1fr;
   grid-template-areas: "Title Title Title" "Description Description Description" "column1 column2 column3";
 }
 .container-price-table .container-title {
@@ -154,7 +159,10 @@ header .bt-login a {
 }
 .container-price-table .column1, .container-price-table .column2, .container-price-table .column3 {
   border-radius: 8px;
-  padding: 20px 30px;
+  padding: 20px 40px;
+}
+.container-price-table .column1 p, .container-price-table .column2 p, .container-price-table .column3 p {
+  padding: 10px;
 }
 .container-price-table .column1 {
   grid-area: column1;
@@ -173,6 +181,10 @@ header .bt-login a {
 }
 .container-price-table .column2 button {
   background-color: #4F9CF9;
+}
+.container-price-table .column2 button a {
+  color: #fff;
+  text-decoration: none;
 }
 .container-price-table .column3 {
   grid-area: column3;
