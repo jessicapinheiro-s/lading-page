@@ -240,5 +240,12 @@ header .bt-login a {
  .container-content, .container-custom, .container-msg-banner, .container-price-table, .container-content-work, .container-asextension, .container-sponsor {
   padding: 50px 20px;
 }
-
+.container-price-table {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px 80px 1fr 1fr 1fr;
+  grid-template-areas: "Title" "Description" "column1" "column2" "column3" ;
+  grid-gap: 20px;
+}
 }
