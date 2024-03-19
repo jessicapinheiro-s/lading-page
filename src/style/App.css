@@ -236,8 +236,7 @@ header .bt-login a {
 
 
 @media (max-width: 600px) {
-  .classeDoElemento {
-    font-size: 14px;
-    color: red;
-  }
+ .container-content, .container-custom, .container-msg-banner, .container-price-table, .container-content-work, .container-asextension, .container-sponsor {
+  padding: 50px 20px;
+}
 }
