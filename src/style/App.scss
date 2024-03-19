@@ -1,8 +1,9 @@
 button {
     border: none;
     padding: 20px;
-    border-radius: 9px;
-    width: 219px;
+    border-radius: 8px;
+    width: 180px;
+    outline: none;
 
     a {
         text-decoration: none;
@@ -47,6 +48,10 @@ header {
         }
     }
 }
+.container-content, .container-custom, .container-msg-banner, .container-price-table,.container-content-work,.container-asextension {
+    padding: 100px 200px;
+}
+
 
 .container-content {
     background-color: #043873;
@@ -54,8 +59,6 @@ header {
     justify-content: space-between;
     align-items: center;
     color: #fff;
-    height: 550px;
-    padding: 100px 200px;
 
     div {
         width: 40%;
@@ -75,10 +78,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 550px;
-    padding: 100px 200px;
+    
 
-    pa div {
+    div {
         width: 40%;
     }
 
@@ -98,8 +100,6 @@ header {
     justify-content: space-between;
     align-items: center;
     color: #fff;
-    height: 550px;
-    padding: 100px 200px;
 
     div {
         width: 40%;
@@ -117,9 +117,7 @@ header {
 
 .container-content-work {
     display: grid;
-    padding: 100px 200px;
     align-items: center;
-    margin: 100px 200px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 'container1 img1'
@@ -158,6 +156,7 @@ header {
 
 .container-price-table {
     display: grid;
+    justify-items: center;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 80px 50px 1fr;
     grid-template-areas:
@@ -174,14 +173,15 @@ header {
         grid-area: Description;
         text-align: center;
     }
-
+    .column1, .column2,.column3{
+        border-radius: 8px;
+        padding: 20px 30px;
+    }
     .column1 {
         grid-area: column1;
         border: 1px solid rgb(238, 238, 238);
         background-color: #fff;
-        border-radius: 8px;
-        padding: 20px 30px;
-
+        
         button {
             color: #000;
             border: 1px solid rgb(204, 204, 204);
@@ -192,9 +192,7 @@ header {
     .column2 {
         grid-area: column2;
         background-color: #043873;
-        border-radius: 8px;
         color: #fff;
-        padding: 20px 30px;
 
         button {
             background-color: #4F9CF9;
@@ -205,8 +203,6 @@ header {
         grid-area: column3;
         border: 1px solid rgb(238, 238, 238);
         background-color: #fff;
-        border-radius: 8px;
-        padding: 20px 30px;
 
         button {
             color: #000;
@@ -214,20 +210,14 @@ header {
             background-color: #fff;
         }
     }
-
-    justify-items: center;
-    padding: 100px 200px;
 }
 
 .container-msg-banner {
     background-color: #043873;
     color: #fff;
     text-align: center;
-    padding: 140px 220px;
-
     button {
         color: #fff;
         background-color: #4F9CF9;
     }
-    padding: 100px 200px;
 }

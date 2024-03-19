@@ -1,8 +1,9 @@
 button {
   border: none;
   padding: 20px;
-  border-radius: 9px;
-  width: 219px;
+  border-radius: 8px;
+  width: 180px;
+  outline: none;
 }
 button a {
   text-decoration: none;
@@ -42,14 +43,16 @@ header .bt-login a {
   color: #000;
 }
 
+.container-content, .container-custom, .container-msg-banner, .container-price-table, .container-content-work, .container-asextension {
+  padding: 100px 200px;
+}
+
 .container-content {
   background-color: #043873;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: #fff;
-  height: 550px;
-  padding: 100px 200px;
 }
 .container-content div {
   width: 40%;
@@ -66,10 +69,8 @@ header .bt-login a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 550px;
-  padding: 100px 200px;
 }
-.container-custom pa div {
+.container-custom div {
   width: 40%;
 }
 .container-custom button {
@@ -86,8 +87,6 @@ header .bt-login a {
   justify-content: space-between;
   align-items: center;
   color: #fff;
-  height: 550px;
-  padding: 100px 200px;
 }
 .container-asextension div {
   width: 40%;
@@ -102,9 +101,7 @@ header .bt-login a {
 
 .container-content-work {
   display: grid;
-  padding: 100px 200px;
   align-items: center;
-  margin: 100px 200px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "container1 img1" "img2 container2";
@@ -134,11 +131,10 @@ header .bt-login a {
 
 .container-price-table {
   display: grid;
+  justify-items: center;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 80px 50px 1fr;
   grid-template-areas: "Title Title Title" "Description Description Description" "column1 column2 column3";
-  justify-items: center;
-  padding: 100px 200px;
 }
 .container-price-table .container-title {
   grid-area: Title;
@@ -148,12 +144,14 @@ header .bt-login a {
   grid-area: Description;
   text-align: center;
 }
+.container-price-table .column1, .container-price-table .column2, .container-price-table .column3 {
+  border-radius: 8px;
+  padding: 20px 30px;
+}
 .container-price-table .column1 {
   grid-area: column1;
   border: 1px solid rgb(238, 238, 238);
   background-color: #fff;
-  border-radius: 8px;
-  padding: 20px 30px;
 }
 .container-price-table .column1 button {
   color: #000;
@@ -163,9 +161,7 @@ header .bt-login a {
 .container-price-table .column2 {
   grid-area: column2;
   background-color: #043873;
-  border-radius: 8px;
   color: #fff;
-  padding: 20px 30px;
 }
 .container-price-table .column2 button {
   background-color: #4F9CF9;
@@ -174,8 +170,6 @@ header .bt-login a {
   grid-area: column3;
   border: 1px solid rgb(238, 238, 238);
   background-color: #fff;
-  border-radius: 8px;
-  padding: 20px 30px;
 }
 .container-price-table .column3 button {
   color: #000;
@@ -187,8 +181,6 @@ header .bt-login a {
   background-color: #043873;
   color: #fff;
   text-align: center;
-  padding: 140px 220px;
-  padding: 100px 200px;
 }
 .container-msg-banner button {
   color: #fff;
