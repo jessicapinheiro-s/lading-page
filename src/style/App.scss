@@ -53,8 +53,8 @@
 
     header .bt-free-triat {
         background-color: #4F9CF9;
-        width: 80px;
-        padding: 10px;
+        width: 200px;
+        padding: 15px 30px;
     }
 
     header .bt-free-triat a {
@@ -64,8 +64,8 @@
 
     header .bt-login {
         background-color: #FFE492;
-        width: 60px;
-        padding: 10px;
+        width: 120px;
+        padding: 15px 30px;
     }
 
     header .bt-login a {
@@ -329,6 +329,15 @@
         }
         .container-content {
             grid-template-areas: "container1 img1" "img2 container2";
+        }
+        header .bt-free-triat {
+            width: 80px;
+            padding: 10px;
+        }
+  
+        header .bt-login {
+            width: 60px;
+            padding: 10px;
         }
     
     }
