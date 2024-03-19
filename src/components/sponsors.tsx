@@ -1,3 +1,8 @@
+import { FcGoogle } from "react-icons/fc";
+import { SiMicrosoft } from "react-icons/si";
+import { SiNike } from "react-icons/si";
+import { FaReact } from "react-icons/fa";
+
 const Sponsors = () => {
     return (
         <div className="container-sponsor">
@@ -5,10 +10,10 @@ const Sponsors = () => {
                 <h1>Our sponsors</h1>
             </div>
             <div className="content-img">
-               <img src="" alt="img" />
-               <img src="" alt="img" />
-               <img src="" alt="img" />
-               <img src="" alt="img" />
+               <FcGoogle className="sponsor-icon"/>
+               <SiNike className="sponsor-icon"/>
+               <FaReact className="sponsor-icon"/>
+               <SiMicrosoft className="sponsor-icon"/>
             </div>
         </div>
     )
