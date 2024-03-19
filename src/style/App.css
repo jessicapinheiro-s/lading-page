@@ -1,10 +1,21 @@
+button {
+  border: none;
+  padding: 20px;
+  border-radius: 9px;
+  width: 219px;
+}
+button a {
+  text-decoration: none;
+}
+
 header {
   background-color: #043873;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   color: #fff;
   height: 92px;
+  padding: 0px 200px;
 }
 header nav {
   width: 33%;
@@ -18,8 +29,17 @@ header nav ul {
 header .bt-free-triat {
   background-color: #4F9CF9;
 }
+header .bt-free-triat a {
+  text-decoration: none;
+  color: #fff;
+}
 header .bt-login {
   background-color: #FFE492;
+  width: 126px;
+}
+header .bt-login a {
+  text-decoration: none;
+  color: #000;
 }
 
 .container-content {
@@ -29,7 +49,7 @@ header .bt-login {
   align-items: center;
   color: #fff;
   height: 550px;
-  padding: 0px 200px;
+  padding: 100px 200px;
 }
 .container-content div {
   width: 40%;
@@ -37,19 +57,27 @@ header .bt-login {
 .container-content button {
   background-color: #4F9CF9;
 }
+.container-content button a {
+  text-decoration: none;
+  color: #fff;
+}
 
 .container-custom {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 550px;
-  padding: 0px 200px;
+  padding: 100px 200px;
 }
-.container-custom div {
+.container-custom pa div {
   width: 40%;
 }
 .container-custom button {
   background-color: #4F9CF9;
+}
+.container-custom button a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .container-asextension {
@@ -59,7 +87,7 @@ header .bt-login {
   align-items: center;
   color: #fff;
   height: 550px;
-  padding: 0px 200px;
+  padding: 100px 200px;
 }
 .container-asextension div {
   width: 40%;
@@ -67,13 +95,15 @@ header .bt-login {
 .container-asextension button {
   background-color: #4F9CF9;
 }
+.container-asextension button a {
+  text-decoration: none;
+  color: #fff;
+}
 
 .container-content-work {
   display: grid;
-  justify-items: center;
-  /* Isso alinha os itens horizontalmente */
+  padding: 100px 200px;
   align-items: center;
-  /* Isso alinha os itens verticalmente */
   margin: 100px 200px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -88,48 +118,79 @@ header .bt-login {
 }
 .container-content-work .container-img-1 {
   grid-area: img1;
+  text-align: right;
 }
 .container-content-work .container-img-2 {
   grid-area: img2;
+  text-align: left;
 }
 .container-content-work button {
   background-color: #4F9CF9;
 }
-
-button {
-  border: none;
-  padding: 20px;
-  border-radius: 9px;
-  width: 219px;
-}
-button a {
+.container-content-work button a {
   text-decoration: none;
   color: #fff;
 }
 
-A .container-price-table {
+.container-price-table {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 80px 50px 1fr;
   grid-template-areas: "Title Title Title" "Description Description Description" "column1 column2 column3";
   justify-items: center;
-  /* Isso alinha os itens horizontalmente */
-  align-items: center;
-  margin: 100px 200px;
-  border: 1px solid red;
+  padding: 100px 200px;
 }
-A .container-price-table .container-price-table {
+.container-price-table .container-title {
   grid-area: Title;
+  text-align: center;
 }
-A .container-price-table .container-description {
+.container-price-table .container-description {
   grid-area: Description;
+  text-align: center;
 }
-A .container-price-table .column1 {
+.container-price-table .column1 {
   grid-area: column1;
+  border: 1px solid rgb(238, 238, 238);
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px 30px;
 }
-A .container-price-table .column2 {
+.container-price-table .column1 button {
+  color: #000;
+  border: 1px solid rgb(204, 204, 204);
+  background-color: #fff;
+}
+.container-price-table .column2 {
   grid-area: column2;
+  background-color: #043873;
+  border-radius: 8px;
+  color: #fff;
+  padding: 20px 30px;
 }
-A .container-price-table .column3 {
+.container-price-table .column2 button {
+  background-color: #4F9CF9;
+}
+.container-price-table .column3 {
   grid-area: column3;
+  border: 1px solid rgb(238, 238, 238);
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px 30px;
+}
+.container-price-table .column3 button {
+  color: #000;
+  border: 1px solid rgb(204, 204, 204);
+  background-color: #fff;
+}
+
+.container-msg-banner {
+  background-color: #043873;
+  color: #fff;
+  text-align: center;
+  padding: 140px 220px;
+  padding: 100px 200px;
+}
+.container-msg-banner button {
+  color: #fff;
+  background-color: #4F9CF9;
 }/*# sourceMappingURL=App.css.map */

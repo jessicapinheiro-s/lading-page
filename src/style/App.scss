@@ -1,10 +1,22 @@
+button {
+    border: none;
+    padding: 20px;
+    border-radius: 9px;
+    width: 219px;
+
+    a {
+        text-decoration: none;
+    }
+}
+
 header {
     background-color: #043873;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     color: #fff;
     height: 92px;
+    padding: 0px 200px;
 
     nav {
         width: 33%;
@@ -19,10 +31,20 @@ header {
 
     .bt-free-triat {
         background-color: #4F9CF9;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
     }
 
     .bt-login {
         background-color: #FFE492;
+        width:126px;
+        a {
+            text-decoration: none;
+            color: #000;
+        }
     }
 }
 
@@ -33,7 +55,7 @@ header {
     align-items: center;
     color: #fff;
     height: 550px;
-    padding: 0px 200px;
+    padding: 100px 200px;
 
     div {
         width: 40%;
@@ -41,31 +63,43 @@ header {
 
     button {
         background-color: #4F9CF9;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
     }
 }
+
 .container-custom {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 550px;
-    padding: 0px 200px;
+    padding: 100px 200px;
 
-    div {
+    pa div {
         width: 40%;
     }
 
     button {
         background-color: #4F9CF9;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
     }
 }
-.container-asextension{
+
+.container-asextension {
     background-color: #043873;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #fff;
     height: 550px;
-    padding: 0px 200px;
+    padding: 100px 200px;
 
     div {
         width: 40%;
@@ -73,15 +107,18 @@ header {
 
     button {
         background-color: #4F9CF9;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
     }
 }
 
 .container-content-work {
     display: grid;
-    justify-items: center;
-    /* Isso alinha os itens horizontalmente */
+    padding: 100px 200px;
     align-items: center;
-    /* Isso alinha os itens verticalmente */
     margin: 100px 200px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -99,56 +136,98 @@ header {
 
     .container-img-1 {
         grid-area: img1;
+        text-align: right;
     }
 
     .container-img-2 {
         grid-area: img2;
+        text-align: left;
     }
 
 
     button {
         background-color: #4F9CF9;
 
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
     }
 }
 
-button {
-    border: none;
-    padding: 20px;
-    border-radius: 9px;
-    width: 219px;
 
-    a {
-        text-decoration: none;
-        color: #fff;
-    }
-}A
-.container-price-table{
+.container-price-table {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 80px 50px 1fr;
-    grid-template-areas: 
-    'Title Title Title'
-    'Description Description Description'
-    'column1 column2 column3';
-    .container-price-table{
-        grid-area:Title ;
+    grid-template-areas:
+        'Title Title Title'
+        'Description Description Description'
+        'column1 column2 column3';
+
+    .container-title {
+        grid-area: Title;
+        text-align: center;
     }
-    .container-description{
-        grid-area:Description ;
+
+    .container-description {
+        grid-area: Description;
+        text-align: center;
     }
-    .column1{
-        grid-area:column1;
+
+    .column1 {
+        grid-area: column1;
+        border: 1px solid rgb(238, 238, 238);
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 20px 30px;
+
+        button {
+            color: #000;
+            border: 1px solid rgb(204, 204, 204);
+            background-color: #fff;
+        }
     }
-    .column2{
-        grid-area:column2;
+
+    .column2 {
+        grid-area: column2;
+        background-color: #043873;
+        border-radius: 8px;
+        color: #fff;
+        padding: 20px 30px;
+
+        button {
+            background-color: #4F9CF9;
+        }
     }
-    .column3{
-        grid-area:column3 ;
+
+    .column3 {
+        grid-area: column3;
+        border: 1px solid rgb(238, 238, 238);
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 20px 30px;
+
+        button {
+            color: #000;
+            border: 1px solid rgb(204, 204, 204);
+            background-color: #fff;
+        }
     }
+
     justify-items: center;
-    /* Isso alinha os itens horizontalmente */
-    align-items: center;
-    margin: 100px 200px;
-    border: 1px solid red;
+    padding: 100px 200px;
+}
+
+.container-msg-banner {
+    background-color: #043873;
+    color: #fff;
+    text-align: center;
+    padding: 140px 220px;
+
+    button {
+        color: #fff;
+        background-color: #4F9CF9;
+    }
+    padding: 100px 200px;
 }
