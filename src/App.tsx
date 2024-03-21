@@ -7,6 +7,7 @@ import Custume from "./components/custome";
 import Plans from "./components/plans";
 import MessageBanner from './components/message-banner';
 import Sponsors from './components/sponsors';
+import Comments from './components/commentss';
 function App() {
   return (
     <div className="App">
@@ -18,6 +19,7 @@ function App() {
       <Plans/>
       <MessageBanner/>
       <Sponsors/>
+      <Comments/>
     </div>
   );
 }

@@ -79,7 +79,8 @@ header .bt-login a {
 .container-price-table,
 .container-content-work,
 .container-asextension,
-.container-sponsor {
+.container-sponsor,
+.container-coments {
   padding: 100px 200px;
 }
 
@@ -269,6 +270,9 @@ header .bt-login a {
       'Description2 img'
       'button2 img';*/
 }
+.container-msg-banner .bt-free-triat a {
+  color: #fff;
+}
 
 .container-msg-banner button {
   color: #fff;
@@ -288,6 +292,48 @@ header .bt-login a {
 
 .sponsor-icon {
   font-size: 100px;
+}
+
+.container-coments {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 1fr;
+  grid-gap: 20px;
+  grid-template-areas: "texto texto texto" "card1 card2 card3";
+}
+.container-coments .text-container {
+  grid-area: texto;
+  text-align: center;
+}
+.container-coments .container-img-1 {
+  grid-area: card1;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #4F9CF9;
+}
+.container-coments .container-img-2 {
+  grid-area: card2;
+  background-color: #4F9CF9;
+  color: #fff;
+}
+.container-coments .container-img-3 {
+  grid-area: card3;
+  background-color: #4F9CF9;
+  color: #fff;
+}
+.container-coments .container-img-3 hr {
+  color: #fff;
+}
+.container-coments .container-img-1,
+.container-coments .container-img-2,
+.container-coments .container-img-3 {
+  border-radius: 10px;
+  padding: 40px 60px;
+}
+.container-coments .container-img-1 .icon-user,
+.container-coments .container-img-2 .icon-user,
+.container-coments .container-img-3 .icon-user {
+  font-size: 40px;
 }
 
 @media (max-width: 600px) {
