@@ -340,6 +340,8 @@ header {
 
         .icon-user {
             font-size: 40px;
+            border: 1px solid red;
+            border-radius: 50%;
         }
     }
 }
@@ -397,6 +399,7 @@ header {
     }
 
 }
+
 .container-coments {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -454,6 +457,7 @@ header {
 }
 
 @media (max-width: 600px) {
+
     .container-content,
     .container-custom,
     .container-msg-banner,
@@ -502,5 +506,17 @@ header {
     header .bt-login {
         width: 60px;
         padding: 10px;
+    }
+
+    .container-coments {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 1fr 1fr 1fr;
+        grid-gap: 20px;
+        grid-template-areas:
+            'texto'
+            'card1'
+            'card2'
+            'card3';
     }
 }

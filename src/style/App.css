@@ -10,14 +10,12 @@ button {
   outline: none;
   word-wrap: wrap;
 }
-
 button a {
   text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 button:hover {
   transform: scale(1.1);
   transition: ease 0.5s;
@@ -33,41 +31,34 @@ header {
   height: 92px;
   padding: 0px 200px;
 }
-
 header nav {
   width: 33%;
 }
-
 header nav ul {
   list-style: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 header nav ul li {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 header .bt-free-triat {
   background-color: #4F9CF9;
   width: 200px;
   padding: 15px 30px;
 }
-
 header .bt-free-triat a {
   text-decoration: none;
   color: #fff;
 }
-
 header .bt-login {
   background-color: #FFE492;
   width: 120px;
   padding: 15px 30px;
 }
-
 header .bt-login a {
   text-decoration: none;
   color: #000;
@@ -92,15 +83,12 @@ header .bt-login a {
   flex-wrap: wrap;
   color: #fff;
 }
-
 .container-content div {
   width: 40%;
 }
-
 .container-content button {
   background-color: #4F9CF9;
 }
-
 .container-content button a {
   text-decoration: none;
   color: #fff;
@@ -112,15 +100,12 @@ header .bt-login a {
   align-items: center;
   flex-wrap: wrap;
 }
-
 .container-custom div {
   width: 40%;
 }
-
 .container-custom button {
   background-color: #4F9CF9;
 }
-
 .container-custom button a {
   text-decoration: none;
   color: #fff;
@@ -134,16 +119,13 @@ header .bt-login a {
   color: #fff;
   flex-wrap: wrap;
 }
-
 .container-asextension div {
   width: 40%;
 }
-
-.container-asextension button {
+.container-asextension div button {
   background-color: #4F9CF9;
 }
-
-.container-asextension button a {
+.container-asextension div button a {
   text-decoration: none;
   color: #fff;
 }
@@ -155,33 +137,27 @@ header .bt-login a {
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "container1 img1" "img2 container2";
 }
-
+.container-content-work button {
+  background-color: #4F9CF9;
+}
+.container-content-work button a {
+  text-decoration: none;
+  color: #fff;
+}
 .container-content-work .content-1 {
   grid-area: container1;
   align-items: center;
 }
-
 .container-content-work .content-2 {
   grid-area: container2;
 }
-
 .container-content-work .container-img-1 {
   grid-area: img1;
   text-align: right;
 }
-
 .container-content-work .container-img-2 {
   grid-area: img2;
   text-align: left;
-}
-
-.container-content-work button {
-  background-color: #4F9CF9;
-}
-
-.container-content-work button a {
-  text-decoration: none;
-  color: #fff;
 }
 
 .container-price-table {
@@ -192,63 +168,52 @@ header .bt-login a {
   grid-template-areas: "Title Title Title" "Description Description Description" "column1 column2 column3";
   grid-gap: 20px;
 }
-
 .container-price-table .container-title {
   grid-area: Title;
   text-align: center;
 }
-
 .container-price-table .container-description {
   grid-area: Description;
   text-align: center;
 }
-
 .container-price-table .column1,
 .container-price-table .column2,
 .container-price-table .column3 {
   border-radius: 8px;
   padding: 20px 40px;
 }
-
 .container-price-table .column1 p,
 .container-price-table .column2 p,
 .container-price-table .column3 p {
   padding: 10px;
 }
-
 .container-price-table .column1 {
   grid-area: column1;
   border: 1px solid rgb(238, 238, 238);
   background-color: #fff;
 }
-
 .container-price-table .column1 button {
   color: #000;
   border: 1px solid rgb(204, 204, 204);
   background-color: #fff;
 }
-
 .container-price-table .column2 {
   grid-area: column2;
   background-color: #043873;
   color: #fff;
 }
-
 .container-price-table .column2 button {
   background-color: #4F9CF9;
 }
-
 .container-price-table .column2 button a {
   color: #fff;
   text-decoration: none;
 }
-
 .container-price-table .column3 {
   grid-area: column3;
   border: 1px solid rgb(238, 238, 238);
   background-color: #fff;
 }
-
 .container-price-table .column3 button {
   color: #000;
   border: 1px solid rgb(204, 204, 204);
@@ -259,16 +224,6 @@ header .bt-login a {
   background-color: #043873;
   color: #fff;
   text-align: center;
-  /*display: grid;
-  grid-template-columns: 1fr 1fr ;
-  grid-template-rows: 80px 80px 100px 100px 80px 1fr;
-  grid-template-areas:
-      'Title Title '
-      'Description Description '
-      'button button'
-      'Title2 img'
-      'Description2 img'
-      'button2 img';*/
 }
 .container-msg-banner .bt-free-triat a {
   color: #fff;
@@ -334,6 +289,8 @@ header .bt-login a {
 .container-coments .container-img-2 .icon-user,
 .container-coments .container-img-3 .icon-user {
   font-size: 40px;
+  border: 1px solid red;
+  border-radius: 50%;
 }
 
 @media (max-width: 600px) {
@@ -377,5 +334,101 @@ header .bt-login a {
   header .bt-login {
     width: 60px;
     padding: 10px;
+  }
+}
+.container-coments {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 1fr;
+  grid-gap: 20px;
+  grid-template-areas: "texto texto texto" "card1 card2 card3";
+}
+.container-coments .text-container {
+  grid-area: texto;
+  text-align: center;
+}
+.container-coments .container-img-1 {
+  grid-area: card1;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #4F9CF9;
+  border-radius: 10px;
+  padding: 40px 60px;
+}
+.container-coments .container-img-1 .icon-user {
+  font-size: 40px;
+}
+.container-coments .container-img-2 {
+  grid-area: card2;
+  background-color: #4F9CF9;
+  color: #fff;
+  border-radius: 10px;
+  padding: 40px 60px;
+}
+.container-coments .container-img-2 .icon-user {
+  font-size: 40px;
+}
+.container-coments .container-img-3 {
+  grid-area: card3;
+  background-color: #4F9CF9;
+  color: #fff;
+  border-radius: 10px;
+  padding: 40px 60px;
+}
+.container-coments .container-img-3 hr {
+  color: #fff;
+}
+.container-coments .container-img-3 .icon-user {
+  font-size: 40px;
+}
+
+@media (max-width: 600px) {
+  .container-content,
+  .container-custom,
+  .container-msg-banner,
+  .container-price-table,
+  .container-content-work,
+  .container-asextension,
+  .container-sponsor {
+    padding: 50px 20px;
+  }
+  header {
+    height: 80px;
+    padding: 0px 20px;
+  }
+  .container-price-table {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 80px 1fr 1fr 1fr;
+    grid-template-areas: "Title" "Description" "column1" "column2" "column3";
+    grid-gap: 20px;
+  }
+  header nav ul {
+    display: block;
+  }
+  button {
+    width: 100px;
+  }
+  .sponsor-icon {
+    font-size: 60px;
+  }
+  .container-content {
+    grid-template-areas: "container1 img1" "img2 container2";
+  }
+  header .bt-free-triat {
+    width: 80px;
+    padding: 10px;
+  }
+  header .bt-login {
+    width: 60px;
+    padding: 10px;
+  }
+  .container-coments {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas: "texto" "card1" "card2" "card3";
   }
 }/*# sourceMappingURL=App.css.map */
