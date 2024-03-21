@@ -512,6 +512,7 @@ header {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 100px 1fr 1fr 1fr;
+        justify-content: center;
         grid-gap: 20px;
         grid-template-areas:
             'texto'
