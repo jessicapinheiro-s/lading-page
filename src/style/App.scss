@@ -82,6 +82,24 @@ header {
     }
 }
 
+footer {
+    background-color: $color-primary;
+    display: grid;
+    color: $color-text;
+
+    nav {
+        ul {
+            list-style: none;
+
+            li {
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
 .container-content,
 .container-custom,
 .container-msg-banner,
@@ -89,7 +107,8 @@ header {
 .container-content-work,
 .container-asextension,
 .container-sponsor,
-.container-coments {
+.container-coments,
+footer {
     padding: $padding-container;
 }
 
@@ -158,11 +177,13 @@ header {
 }
 
 .container-content-work {
-    display: grid;
+    display: flex;
     align-items: center;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "container1 img1" "img2 container2";
+    justify-content: space-between;
+
+    div {
+        width: 40%;
+    }
 
     button {
         background-color: $color-secondary;
@@ -173,24 +194,6 @@ header {
         }
     }
 
-    .content-1 {
-        grid-area: container1;
-        align-items: center;
-    }
-
-    .content-2 {
-        grid-area: container2;
-    }
-
-    .container-img-1 {
-        grid-area: img1;
-        text-align: right;
-    }
-
-    .container-img-2 {
-        grid-area: img2;
-        text-align: left;
-    }
 }
 
 .container-price-table {

@@ -64,6 +64,18 @@ header .bt-login a {
   color: #000;
 }
 
+footer {
+  background-color: #043873;
+  display: grid;
+  color: #fff;
+}
+footer nav ul {
+  list-style: none;
+}
+footer nav ul li:hover {
+  text-decoration: underline;
+}
+
 .container-content,
 .container-custom,
 .container-msg-banner,
@@ -71,7 +83,8 @@ header .bt-login a {
 .container-content-work,
 .container-asextension,
 .container-sponsor,
-.container-coments {
+.container-coments,
+footer {
   padding: 100px 200px;
 }
 
@@ -131,11 +144,12 @@ header .bt-login a {
 }
 
 .container-content-work {
-  display: grid;
+  display: flex;
   align-items: center;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "container1 img1" "img2 container2";
+  justify-content: space-between;
+}
+.container-content-work div {
+  width: 40%;
 }
 .container-content-work button {
   background-color: #4F9CF9;
@@ -143,21 +157,6 @@ header .bt-login a {
 .container-content-work button a {
   text-decoration: none;
   color: #fff;
-}
-.container-content-work .content-1 {
-  grid-area: container1;
-  align-items: center;
-}
-.container-content-work .content-2 {
-  grid-area: container2;
-}
-.container-content-work .container-img-1 {
-  grid-area: img1;
-  text-align: right;
-}
-.container-content-work .container-img-2 {
-  grid-area: img2;
-  text-align: left;
 }
 
 .container-price-table {
