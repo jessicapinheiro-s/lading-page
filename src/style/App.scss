@@ -98,6 +98,13 @@ footer {
             }
         }
     }
+
+    button {
+        a {
+            text-decoration: none;
+            color: $color-text-dark;
+        }
+    }
 }
 
 .container-content,
@@ -108,8 +115,35 @@ footer {
 .container-asextension,
 .container-sponsor,
 .container-coments,
-footer {
+footer,
+.container-call-to-action {
     padding: $padding-container;
+}
+
+.container-call-to-action {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: $color-primary;
+    color: $color-text;
+    gap: 20px;
+
+    .bt-try {
+        background-color: $color-secondary;
+        align-self: center;
+
+        a {
+            text-decoration: none;
+            color: $color-text;
+        }
+    }
+
+    .it-company-icon {
+        .icon {
+            font-size: 60px;
+            margin: 0px 20px;
+        }
+    }
 }
 
 .container-content {
@@ -343,7 +377,7 @@ footer {
 
         .icon-user {
             font-size: 40px;
-            border: 1px solid red;
+            border: 1px solid rgb(255, 255, 255);
             border-radius: 50%;
         }
     }
@@ -357,7 +391,10 @@ footer {
     .container-price-table,
     .container-content-work,
     .container-asextension,
-    .container-sponsor {
+    .container-sponsor,
+    .container-coments,
+    footer,
+    .container-call-to-action {
         padding: 50px 20px;
     }
 

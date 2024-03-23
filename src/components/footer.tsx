@@ -1,5 +1,5 @@
-import { MdKeyboardArrowDown } from "react-icons/md";
 import React from 'react';
+import { IoArrowForwardOutline } from "react-icons/io5";
 
 const Footer = () => {
     return (
@@ -8,7 +8,7 @@ const Footer = () => {
                 <img src="log" alt="logo" />
                 <p>whitepace was created for the new ways we live and work. We make a better workspace around the world</p>
             </div>
-            <nav>
+            <nav className="product">
                 <ul>
                     <li><strong>Product</strong></li>
                     <li>Overview</li>
@@ -16,7 +16,7 @@ const Footer = () => {
                     <li>ustumer stories </li>
                 </ul>
             </nav>
-            <nav>
+            <nav className="rosources">
                 <ul>
                     <li><strong>Resources</strong></li>
                     <li>Blog</li>
@@ -24,7 +24,7 @@ const Footer = () => {
                     <li>Help center</li>
                 </ul>
             </nav>
-            <nav>
+            <nav className="company">
                 <ul>
                     <li><strong>Company</strong></li>
                     <li>About us</li>
@@ -36,7 +36,7 @@ const Footer = () => {
                 <h3>Try It Today</h3>
                 <p>Get started for free.
                     Add your whole team as your needs grow.</p>
-                <button className="bt-start-today"><a href="#">Start Today</a></button>
+                <button className="bt-start-today"><a href="#">Start Today <IoArrowForwardOutline/></a></button>
             </div>
 
         </footer>

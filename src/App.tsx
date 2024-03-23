@@ -6,12 +6,13 @@ import Sponsors from './components/sponsors';
 import Comments from './components/commentss';
 import LadingPage from './pages/landing-page';
 import Footer from './components/footer';
+import CalltoAction from './components/callToAction';
 function App() {
   return (
     <div className="App">
-      <HeaderContainer/>
-      <LadingPage/>
-      <Footer/>
+      <HeaderContainer />
+      <LadingPage />
+      <Footer />
     </div>
   );
 }

@@ -75,6 +75,10 @@ footer nav ul {
 footer nav ul li:hover {
   text-decoration: underline;
 }
+footer button a {
+  text-decoration: none;
+  color: #000;
+}
 
 .container-content,
 .container-custom,
@@ -84,8 +88,30 @@ footer nav ul li:hover {
 .container-asextension,
 .container-sponsor,
 .container-coments,
-footer {
+footer,
+.container-call-to-action {
   padding: 100px 200px;
+}
+
+.container-call-to-action {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #043873;
+  color: #fff;
+  gap: 20px;
+}
+.container-call-to-action .bt-try {
+  background-color: #4F9CF9;
+  align-self: center;
+}
+.container-call-to-action .bt-try a {
+  text-decoration: none;
+  color: #fff;
+}
+.container-call-to-action .it-company-icon .icon {
+  font-size: 60px;
+  margin: 0px 20px;
 }
 
 .container-content {
@@ -288,7 +314,7 @@ footer {
 .container-coments .container-img-2 .icon-user,
 .container-coments .container-img-3 .icon-user {
   font-size: 40px;
-  border: 1px solid red;
+  border: 1px solid rgb(255, 255, 255);
   border-radius: 50%;
 }
 
@@ -299,7 +325,10 @@ footer {
   .container-price-table,
   .container-content-work,
   .container-asextension,
-  .container-sponsor {
+  .container-sponsor,
+  .container-coments,
+  footer,
+  .container-call-to-action {
     padding: 50px 20px;
   }
   header {

@@ -4,6 +4,8 @@ import Plans from '../components/plans';
 import MessageBanner from '../components/message-banner';
 import Sponsors from '../components/sponsors';
 import Comments from '../components/commentss';
+import CalltoAction from '../components/callToAction';
+import Footer from '../components/footer';
 interface PropsComponent {
     titulo: string;
     texto?: string;
@@ -63,10 +65,10 @@ export default function LadingPage() {
             classeContainer: "container-custom",
             inverter: 'Sim'
         },
-        {titulo: 'price'},
-        {titulo: 'banner-message'},
-        {titulo: 'sponsosr'},
-        {titulo: 'comments'},
+        { titulo: 'price' },
+        { titulo: 'banner-message' },
+        { titulo: 'sponsosr' },
+        { titulo: 'comments' },
         {
             titulo: "Work with Your Favorite Apps Using whitepace",
             texto: "Whitepace teams up with your favorite software. Integrate with over 1000+ apps with Zapier to have all the tools you need for your project success.",
@@ -76,27 +78,28 @@ export default function LadingPage() {
             classeContainer: "container-custom",
             inverter: 'Sim'
         }
-        
-        
+
+
     ]
-arrayInfoContent.map(f => console.log(f.titulo));
+    arrayInfoContent.map(f => console.log(f.titulo));
     return (
         <div>
             {
                 arrayInfoContent.map(f => {
-                    if(f.titulo === 'price'){
-                        return <Plans/>
-                    }else if(f.titulo === 'banner-message'){
-                        return <MessageBanner/>
-                    }else if (f.titulo === 'sponsosr') {
-                        return <Sponsors/>
-                    } else if(f.titulo === 'comments'){
-                        return <Comments/>
-                    }else{
+                    if (f.titulo === 'price') {
+                        return <Plans />
+                    } else if (f.titulo === 'banner-message') {
+                        return <MessageBanner />
+                    } else if (f.titulo === 'sponsosr') {
+                        return <Sponsors />
+                    } else if (f.titulo === 'comments') {
+                        return <Comments />
+                    } else {
                         return <ComponenteBase PropsComponent={f} key={f.titulo} />
                     }
                 })
             }
+            <CalltoAction />
         </div>
     )
 
