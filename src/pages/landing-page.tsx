@@ -1,11 +1,12 @@
 import React from 'react';
+import minhaImg from '../imgs/modern_students_flat_icons-13-removebg-preview.png'
 import ComponenteBase from '../components/componente-base';
 import Plans from '../components/plans';
 import MessageBanner from '../components/message-banner';
 import Sponsors from '../components/sponsors';
 import Comments from '../components/commentss';
 import CalltoAction from '../components/callToAction';
-import Footer from '../components/footer';
+
 interface PropsComponent {
     titulo: string;
     texto?: string;
@@ -18,6 +19,7 @@ interface PropsComponent {
     inverter?: string;
 }
 
+
 export default function LadingPage() {
     const arrayInfoContent: PropsComponent[] = [
         {
@@ -27,7 +29,8 @@ export default function LadingPage() {
             classeDivContent: "content",
             classeDivImg: "container-img",
             classeContainer: "container-content",
-            inverter: 'Não'
+            inverter: 'Não',
+            imgCaminho: minhaImg
         },
         {
             titulo: "Project Management",
@@ -36,7 +39,8 @@ export default function LadingPage() {
             classeDivContent: "content-1",
             classeDivImg: "container-img-1",
             classeContainer: "container-content-work",
-            inverter: 'Não'
+            inverter: 'Não',
+            imgCaminho: minhaImg
         },
         {
             titulo: "Work together",
@@ -45,7 +49,8 @@ export default function LadingPage() {
             classeDivContent: "content-2",
             classeDivImg: "container-img-2",
             classeContainer: "container-content-work",
-            inverter: 'Sim'
+            inverter: 'Sim',
+            imgCaminho: minhaImg
         },
         {
             titulo: "Use as Extension",
@@ -54,7 +59,8 @@ export default function LadingPage() {
             classeDivContent: "content-1",
             classeDivImg: "container-img-1",
             classeContainer: "container-asextension",
-            inverter: 'Não'
+            inverter: 'Não',
+            imgCaminho: minhaImg
         },
         {
             titulo: "Customise it to your needs",
@@ -63,7 +69,8 @@ export default function LadingPage() {
             classeDivContent: "content",
             classeDivImg: "container-img",
             classeContainer: "container-custom",
-            inverter: 'Sim'
+            inverter: 'Sim',
+            imgCaminho: minhaImg
         },
         { titulo: 'price' },
         { titulo: 'banner-message' },
@@ -76,7 +83,8 @@ export default function LadingPage() {
             classeDivContent: "content",
             classeDivImg: "container-img",
             classeContainer: "container-custom",
-            inverter: 'Sim'
+            inverter: 'Sim',
+            imgCaminho: minhaImg
         }
 
 
@@ -85,6 +93,7 @@ export default function LadingPage() {
     return (
         <div>
             {
+                
                 arrayInfoContent.map(f => {
                     if (f.titulo === 'price') {
                         return <Plans />
@@ -99,7 +108,7 @@ export default function LadingPage() {
                     }
                 })
             }
-            <CalltoAction />
+            <CalltoAction />`
         </div>
     )
 

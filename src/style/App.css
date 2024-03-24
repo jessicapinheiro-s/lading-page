@@ -76,7 +76,7 @@ footer {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 60px;
   grid-template-areas: "about product resources company callAction" "copyright copyright copyright copyright copyright";
-  padding: 0px 100px;
+  padding: 50px 100px 0px;
 }
 footer nav ul {
   list-style: none;
@@ -496,6 +496,6 @@ footer .copyright .about ul {
     grid-template-areas: "texto" "card1" "card2" "card3";
   }
   footer {
-    padding: 0px 20px;
+    padding: 50px 20px 0px;
   }
 }/*# sourceMappingURL=App.css.map */
