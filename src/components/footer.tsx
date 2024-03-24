@@ -1,5 +1,11 @@
 import React from 'react';
 import { IoArrowForwardOutline } from "react-icons/io5";
+import { IoLogoTwitter } from "react-icons/io";
+import { RiInstagramFill } from "react-icons/ri";
+import { FaFacebook } from "react-icons/fa";
+import { AiOutlineGlobal } from "react-icons/ai";
+import { LuCopyright } from "react-icons/lu";
+
 
 const Footer = () => {
     return (
@@ -36,9 +42,24 @@ const Footer = () => {
                 <h3>Try It Today</h3>
                 <p>Get started for free.
                     Add your whole team as your needs grow.</p>
-                <button className="bt-start-today"><a href="#">Start Today <IoArrowForwardOutline/></a></button>
+                <button className="bt-start-today"><a href="#">Start Today <IoArrowForwardOutline /></a></button>
             </div>
-
+            <div className='copyright'>
+                <nav className='about'>
+                    <ul>
+                        <li><AiOutlineGlobal />English</li>
+                        <li>Terms & privacy</li>
+                        <li>Security</li>
+                        <li>Status</li>
+                        <li><LuCopyright/>2021 Whitespace LLC.</li>
+                    </ul>
+                </nav>
+                <div className='social-media'>
+                    <IoLogoTwitter />
+                    <RiInstagramFill />
+                    <FaFacebook />
+                </div>
+            </div>
         </footer>
     )
 }

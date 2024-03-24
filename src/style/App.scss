@@ -10,7 +10,10 @@ $padding-container: 100px 200px;
 .app {
     width: 100%;
 }
-
+*{
+    padding: 0px;
+    margin: 0px;
+}
 button {
     border: none;
     padding: 20px;
@@ -41,7 +44,6 @@ header {
     color: $color-text;
     height: 92px;
     padding: 0px 200px;
-
     nav {
         width: 33%;
 
@@ -86,7 +88,11 @@ footer {
     background-color: $color-primary;
     display: grid;
     color: $color-text;
-
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 60px;
+    grid-template-areas: 'about product resources company callAction'
+    'copyright copyright copyright copyright copyright';
+    padding: 0px 100px;
     nav {
         ul {
             list-style: none;
@@ -105,6 +111,45 @@ footer {
             color: $color-text-dark;
         }
     }
+
+    .about-company {
+        grid-area: about;
+    }
+
+    .callToAction {
+        grid-area: callAction;
+    }
+
+    .company {
+        grid-area:company ;
+
+    }
+
+    .rosources {
+        grid-area:resources ;
+
+    }
+
+    .product {
+        grid-area: product;
+
+    }
+
+    .copyright {
+        grid-area: copyright;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        .about{
+            ul{
+                list-style: none;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+    }
 }
 
 .container-content,
@@ -115,7 +160,6 @@ footer {
 .container-asextension,
 .container-sponsor,
 .container-coments,
-footer,
 .container-call-to-action {
     padding: $padding-container;
 }
@@ -508,11 +552,6 @@ footer,
         padding: 50px 20px;
     }
 
-    header {
-        height: 80px;
-        padding: 0px 20px;
-    }
-
     .container-price-table {
         display: grid;
         justify-items: center;
@@ -520,10 +559,6 @@ footer,
         grid-template-rows: 80px 80px 1fr 1fr 1fr;
         grid-template-areas: "Title" "Description" "column1" "column2" "column3";
         grid-gap: 20px;
-    }
-
-    header nav ul {
-        display: block;
     }
 
     button {
@@ -538,14 +573,20 @@ footer,
         grid-template-areas: "container1 img1" "img2 container2";
     }
 
-    header .bt-free-triat {
-        width: 80px;
-        padding: 10px;
-    }
-
-    header .bt-login {
-        width: 60px;
-        padding: 10px;
+    header {
+        height: 80px;
+        padding: 0px 20px;
+        nav ul {
+            display: block;
+        }
+        .bt-free-triat {
+            width: 80px;
+            padding: 10px;
+        }
+        .bt-login {
+            width: 60px;
+            padding: 10px;
+        }
     }
 
     .container-coments {
@@ -559,5 +600,8 @@ footer,
             'card1'
             'card2'
             'card3';
+    }
+    footer{
+        padding: 0px 20px;
     }
 }
