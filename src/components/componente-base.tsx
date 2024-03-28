@@ -29,3 +29,5 @@ const ComponenteBase: React.FC<{PropsComponent: PropsComponent}> = ({PropsCompon
     )
 }
 export default ComponenteBase;
+
+

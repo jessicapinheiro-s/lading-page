@@ -2,8 +2,8 @@
   flex-direction: row-reverse;
 }
 
-.inverter-coluna {
-  flex-direction: column;
+li {
+  padding: 10px 15px;
 }
 
 .app {
@@ -135,6 +135,36 @@ footer .copyright .about ul {
 .container-coments,
 .container-call-to-action {
   padding: 100px 200px;
+}
+.container-content p, .container-content h1,
+.container-custom p,
+.container-custom h1,
+.container-msg-banner p,
+.container-msg-banner h1,
+.container-price-table p,
+.container-price-table h1,
+.container-content-work p,
+.container-content-work h1,
+.container-asextension p,
+.container-asextension h1,
+.container-sponsor p,
+.container-sponsor h1,
+.container-coments p,
+.container-coments h1,
+.container-call-to-action p,
+.container-call-to-action h1 {
+  padding: 10px;
+}
+.container-content button,
+.container-custom button,
+.container-msg-banner button,
+.container-price-table button,
+.container-content-work button,
+.container-asextension button,
+.container-sponsor button,
+.container-coments button,
+.container-call-to-action button {
+  margin: 10px;
 }
 
 .container-call-to-action {
@@ -365,40 +395,31 @@ footer .copyright .about ul {
   border-radius: 50%;
 }
 
-.content,
-.content-1,
-.content-2 > h1 {
-  padding: 10px;
-}
-
-.content,
-.content-1,
-.content-2 > button {
-  padding: 10px;
-}
-
-.content,
-.content-1,
-.content-2 > p {
-  padding: 10px;
-}
-
 @media (max-width: 600px) {
   .container-content,
   .container-custom,
   .container-msg-banner,
-  .container-price-table,
   .container-content-work,
   .container-asextension,
   .container-sponsor,
-  .container-coments,
   footer,
   .container-call-to-action {
     padding: 50px 20px;
     flex-direction: column;
   }
+  .container-content div,
+  .container-custom div,
+  .container-msg-banner div,
+  .container-content-work div,
+  .container-asextension div,
+  .container-sponsor div,
+  footer div,
+  .container-call-to-action div {
+    width: 100%;
+  }
   .container-price-table {
     display: grid;
+    padding: 50px 20px;
     justify-items: center;
     grid-template-columns: 1fr;
     grid-template-rows: 80px 80px 1fr 1fr 1fr;
@@ -410,9 +431,6 @@ footer .copyright .about ul {
   }
   .sponsor-icon {
     font-size: 60px;
-  }
-  .container-content {
-    flex-direction: column !important;
   }
   header {
     height: 80px;
@@ -447,5 +465,12 @@ footer .copyright .about ul {
   .container-img-1 img,
   .container-img-2 img {
     text-align: center;
+    width: 100%;
+  }
+  .container-coments {
+    padding: 50px 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 1fr 1fr;
+    grid-template-areas: "texto" "card1" "card2" "card3";
   }
 }/*# sourceMappingURL=App.css.map */

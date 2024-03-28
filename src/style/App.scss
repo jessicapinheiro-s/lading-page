@@ -10,10 +10,9 @@ $padding-container: 100px 200px;
     flex-direction: row-reverse;
 }
 
-.inverter-coluna {
-    flex-direction: column;
+li{
+    padding: 10px 15px;
 }
-
 // Estilos
 .app {
     width: 100%;
@@ -31,6 +30,7 @@ button {
     width: 180px;
     outline: none;
     word-wrap: wrap;
+
 
     a {
         text-decoration: none;
@@ -175,7 +175,12 @@ footer {
 .container-coments,
 .container-call-to-action {
     padding: $padding-container;
-
+    p,h1{
+        padding: 10px;
+    }
+    button{
+        margin: 10px;
+    }
 }
 
 .container-call-to-action {
@@ -445,44 +450,27 @@ footer {
     }
 }
 
-.content,
-.content-1,
-.content-2>h1 {
-    padding: 10px;
-}
-
-.content,
-.content-1,
-.content-2>button {
-    padding: 10px;
-}
-
-.content,
-.content-1,
-.content-2>p {
-    padding: 10px;
-}
 
 @media (max-width: 600px) {
 
     .container-content,
     .container-custom,
     .container-msg-banner,
-    .container-price-table,
     .container-content-work,
     .container-asextension,
     .container-sponsor,
-    .container-coments,
     footer,
     .container-call-to-action {
         padding: 50px 20px;
         flex-direction: column;
+        div{
+            width: 100%;
+        }
     }
-
-
 
     .container-price-table {
         display: grid;
+        padding: 50px 20px;
         justify-items: center;
         grid-template-columns: 1fr;
         grid-template-rows: 80px 80px 1fr 1fr 1fr;
@@ -496,10 +484,6 @@ footer {
 
     .sponsor-icon {
         font-size: 60px;
-    }
-
-    .container-content {
-        flex-direction: column !important;
     }
 
     header {
@@ -546,10 +530,23 @@ footer {
 
     }
 
+
     .container-img img,
     .container-img-1 img,
-    .container-img-2 img{
+    .container-img-2 img {
         text-align: center;
+        width: 100%;
+    }
+
+    .container-coments {
+        padding: 50px 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 1fr 1fr 1fr;
+        grid-template-areas:
+            'texto'
+            'card1'
+            'card2'
+            'card3';
     }
 
 }
