@@ -452,7 +452,6 @@ footer {
 
 
 @media (max-width: 600px) {
-
     .container-content,
     .container-custom,
     .container-msg-banner,
@@ -462,7 +461,7 @@ footer {
     footer,
     .container-call-to-action {
         padding: 50px 20px;
-        flex-direction: column;
+        flex-direction: column-reverse;
         div{
             width: 100%;
         }
@@ -479,7 +478,7 @@ footer {
     }
 
     button {
-        width: 100px;
+        width: 180px;
     }
 
     .sponsor-icon {
