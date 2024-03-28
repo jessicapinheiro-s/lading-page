@@ -10,9 +10,10 @@ $padding-container: 100px 200px;
     flex-direction: row-reverse;
 }
 
-li{
+li {
     padding: 10px 15px;
 }
+
 // Estilos
 .app {
     width: 100%;
@@ -125,12 +126,22 @@ footer {
         }
     }
 
+
     .about-company {
         grid-area: about;
     }
 
     .callToAction {
         grid-area: callAction;
+
+        p,
+        h3 {
+            padding: 10px;
+        }
+
+        button {
+            margin: 10px;
+        }
     }
 
     .company {
@@ -154,6 +165,10 @@ footer {
         align-items: center;
         justify-content: space-between;
 
+        .social-media>* {
+            padding: 10px;
+        }
+
         .about {
             ul {
                 list-style: none;
@@ -175,10 +190,13 @@ footer {
 .container-coments,
 .container-call-to-action {
     padding: $padding-container;
-    p,h1{
+
+    p,
+    h1 {
         padding: 10px;
     }
-    button{
+
+    button {
         margin: 10px;
     }
 }
@@ -452,6 +470,7 @@ footer {
 
 
 @media (max-width: 600px) {
+
     .container-content,
     .container-custom,
     .container-msg-banner,
@@ -462,10 +481,12 @@ footer {
     .container-call-to-action {
         padding: 50px 20px;
         flex-direction: column-reverse;
-        div{
+
+        div {
             width: 100%;
         }
     }
+
 
     .container-price-table {
         display: grid;

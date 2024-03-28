@@ -103,6 +103,13 @@ footer .about-company {
 footer .callToAction {
   grid-area: callAction;
 }
+footer .callToAction p,
+footer .callToAction h3 {
+  padding: 10px;
+}
+footer .callToAction button {
+  margin: 10px;
+}
 footer .company {
   grid-area: company;
 }
@@ -117,6 +124,9 @@ footer .copyright {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+footer .copyright .social-media > * {
+  padding: 10px;
 }
 footer .copyright .about ul {
   list-style: none;
@@ -136,7 +146,8 @@ footer .copyright .about ul {
 .container-call-to-action {
   padding: 100px 200px;
 }
-.container-content p, .container-content h1,
+.container-content p,
+.container-content h1,
 .container-custom p,
 .container-custom h1,
 .container-msg-banner p,
