@@ -15,9 +15,8 @@ interface PropsComponent {
 }
 
 const ComponenteBase: React.FC<{PropsComponent: PropsComponent}> = ({PropsComponent }) => {
-
     return (
-        <div className={PropsComponent.classeContainer} style={PropsComponent.inverter === 'Sim' ? {flexDirection: 'row-reverse' } : {flexDirection: 'unset' }}>
+        <div className={`${PropsComponent.classeContainer} ${PropsComponent.inverter === 'Sim' ?  'inverter'  : '' }`}>
             <div className={PropsComponent.classeDivContent}>
                 <h1>{PropsComponent.titulo}</h1>
                 <p >{PropsComponent.texto}</p>

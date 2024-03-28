@@ -1,3 +1,11 @@
+.inverter {
+  flex-direction: row-reverse;
+}
+
+.inverter-coluna {
+  flex-direction: column;
+}
+
 .app {
   width: 100%;
 }
@@ -387,6 +395,7 @@ footer .copyright .about ul {
   footer,
   .container-call-to-action {
     padding: 50px 20px;
+    flex-direction: column;
   }
   .container-price-table {
     display: grid;
@@ -403,7 +412,7 @@ footer .copyright .about ul {
     font-size: 60px;
   }
   .container-content {
-    grid-template-areas: "container1 img1" "img2 container2";
+    flex-direction: column !important;
   }
   header {
     height: 80px;
@@ -433,5 +442,10 @@ footer .copyright .about ul {
   }
   footer .copyright .about ul {
     display: block;
+  }
+  .container-img img,
+  .container-img-1 img,
+  .container-img-2 img {
+    text-align: center;
   }
 }/*# sourceMappingURL=App.css.map */

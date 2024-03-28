@@ -6,6 +6,14 @@ $color-text: #fff;
 $color-text-dark: #000;
 $padding-container: 100px 200px;
 
+.inverter {
+    flex-direction: row-reverse;
+}
+
+.inverter-coluna {
+    flex-direction: column;
+}
+
 // Estilos
 .app {
     width: 100%;
@@ -439,17 +447,19 @@ footer {
 
 .content,
 .content-1,
-.content-2 > h1 {
+.content-2>h1 {
     padding: 10px;
 }
+
 .content,
 .content-1,
-.content-2 > button {
+.content-2>button {
     padding: 10px;
 }
+
 .content,
 .content-1,
-.content-2 > p {
+.content-2>p {
     padding: 10px;
 }
 
@@ -466,6 +476,7 @@ footer {
     footer,
     .container-call-to-action {
         padding: 50px 20px;
+        flex-direction: column;
     }
 
 
@@ -488,7 +499,7 @@ footer {
     }
 
     .container-content {
-        grid-template-areas: "container1 img1" "img2 container2";
+        flex-direction: column !important;
     }
 
     header {
@@ -535,5 +546,10 @@ footer {
 
     }
 
+    .container-img img,
+    .container-img-1 img,
+    .container-img-2 img{
+        text-align: center;
+    }
 
 }
