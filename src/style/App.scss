@@ -10,10 +10,12 @@ $padding-container: 100px 200px;
 .app {
     width: 100%;
 }
-*{
+
+* {
     padding: 0px;
     margin: 0px;
 }
+
 button {
     border: none;
     padding: 20px;
@@ -44,6 +46,7 @@ header {
     color: $color-text;
     height: 92px;
     padding: 0px 200px;
+
     nav {
         width: 33%;
 
@@ -91,8 +94,10 @@ footer {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 60px;
     grid-template-areas: 'about product resources company callAction'
-    'copyright copyright copyright copyright copyright';
+        'copyright copyright copyright copyright copyright';
     padding: 50px 100px 0px;
+    justify-content: center;
+
     nav {
         ul {
             list-style: none;
@@ -121,12 +126,12 @@ footer {
     }
 
     .company {
-        grid-area:company ;
+        grid-area: company;
 
     }
 
     .rosources {
-        grid-area:resources ;
+        grid-area: resources;
 
     }
 
@@ -140,9 +145,9 @@ footer {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        
-        .about{
-            ul{
+
+        .about {
+            ul {
                 list-style: none;
                 display: flex;
                 align-items: center;
@@ -162,6 +167,7 @@ footer {
 .container-coments,
 .container-call-to-action {
     padding: $padding-container;
+
 }
 
 .container-call-to-action {
@@ -209,6 +215,10 @@ footer {
             text-decoration: none;
             color: $color-text;
         }
+    }
+
+    .content>* {
+        padding: 20px;
     }
 }
 
@@ -427,6 +437,22 @@ footer {
     }
 }
 
+.content,
+.content-1,
+.content-2 > h1 {
+    padding: 10px;
+}
+.content,
+.content-1,
+.content-2 > button {
+    padding: 10px;
+}
+.content,
+.content-1,
+.content-2 > p {
+    padding: 10px;
+}
+
 @media (max-width: 600px) {
 
     .container-content,
@@ -442,115 +468,7 @@ footer {
         padding: 50px 20px;
     }
 
-    header {
-        height: 80px;
-        padding: 0px 20px;
-    }
 
-    .container-price-table {
-        display: grid;
-        justify-items: center;
-        grid-template-columns: 1fr;
-        grid-template-rows: 80px 80px 1fr 1fr 1fr;
-        grid-template-areas: "Title" "Description" "column1" "column2" "column3";
-        grid-gap: 20px;
-    }
-
-    header nav ul {
-        display: block;
-    }
-
-    button {
-        width: 100px;
-    }
-
-    .sponsor-icon {
-        font-size: 60px;
-    }
-
-    .container-content {
-        grid-template-areas: "container1 img1" "img2 container2";
-    }
-
-    header .bt-free-triat {
-        width: 80px;
-        padding: 10px;
-    }
-
-    header .bt-login {
-        width: 60px;
-        padding: 10px;
-    }
-
-}
-
-.container-coments {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px 1fr;
-    grid-gap: 20px;
-    grid-template-areas:
-        'texto texto texto'
-        'card1 card2 card3';
-
-    .text-container {
-        grid-area: texto;
-        text-align: center;
-    }
-
-    .container-img-1 {
-        grid-area: card1;
-        background-color: #fff;
-        color: #000;
-        border: 1px solid #4F9CF9;
-        border-radius: 10px;
-        padding: 40px 60px;
-
-        .icon-user {
-            font-size: 40px;
-        }
-    }
-
-    .container-img-2 {
-        grid-area: card2;
-        background-color: #4F9CF9;
-        color: #fff;
-        border-radius: 10px;
-        padding: 40px 60px;
-
-        .icon-user {
-            font-size: 40px;
-        }
-    }
-
-    .container-img-3 {
-        grid-area: card3;
-        background-color: #4F9CF9;
-        color: #fff;
-        border-radius: 10px;
-        padding: 40px 60px;
-
-        hr {
-            color: #fff;
-        }
-
-        .icon-user {
-            font-size: 40px;
-        }
-    }
-}
-
-@media (max-width: 600px) {
-
-    .container-content,
-    .container-custom,
-    .container-msg-banner,
-    .container-price-table,
-    .container-content-work,
-    .container-asextension,
-    .container-sponsor {
-        padding: 50px 20px;
-    }
 
     .container-price-table {
         display: grid;
@@ -576,33 +494,46 @@ footer {
     header {
         height: 80px;
         padding: 0px 20px;
-        nav ul {
-            display: block;
-        }
+
         .bt-free-triat {
             width: 80px;
             padding: 10px;
         }
+
         .bt-login {
             width: 60px;
             padding: 10px;
         }
+
+        nav ul {
+            display: block;
+        }
     }
 
-    .container-coments {
-        display: grid;
+    footer {
         grid-template-columns: 1fr;
-        grid-template-rows: 100px 1fr 1fr 1fr;
-        justify-content: center;
-        grid-gap: 20px;
-        grid-template-areas:
-            'texto'
-            'card1'
-            'card2'
-            'card3';
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 60px;
+        grid-template-areas: 'about'
+            'product'
+            'resources'
+            'company'
+            'callAction'
+            'copyright';
+        text-align: center;
+
+        .copyright {
+            grid-area: copyright;
+            display: flex;
+            flex-direction: column;
+
+            .about {
+                ul {
+                    display: block;
+                }
+            }
+        }
+
     }
-    footer{
-        padding:50px 20px 0px;
-        
-    }
+
+
 }
